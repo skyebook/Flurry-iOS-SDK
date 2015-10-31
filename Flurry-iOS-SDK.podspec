@@ -18,6 +18,8 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '5.0'
   s.requires_arc = false
   s.default_subspec = 'FlurrySDK'
+  
+  s.tvos.deployment_target = '9.0'
 
   s.subspec 'FlurrySDK' do |ss|
     ss.source_files = [
